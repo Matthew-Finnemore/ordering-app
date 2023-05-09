@@ -26,23 +26,21 @@
   </head>
   <body>
     <header>
-      <div class="header">
-        <h1 class="title">Jimmy's Diner</h1>
-        <h2 class="">The best burgers and pizzas in town</h2>
-      </div>
+      <h1 class="title">Jimmy's Diner</h1>
+      <h2>The best burgers and pizzas in town</h2>
     </header>
     <div id="menu-items"></div>
     <div class="order-section">
       <h3 class="order-title">Your Order</h3>
-      <div class="ordered" id="ordered">
-        </div>
-      </div>
+      <div class="ordered" id="ordered"></div>
+
       <div class="order-total">
         <div class="total-price">Total Price</div>
         <div class="price" id="total-price"></div>
       </div>
       <button class="hide btn" id="complete-order">Complete Order</button>
     </div>
+
     <dialog class="dialog" close>
       <form class="modal" id="modal-form">
         <p class="modal-heading">Enter card details</p>
@@ -59,7 +57,7 @@
         <input
           type="number"
           id="card-number"
-          inputmode="numeric"  
+          inputmode="numeric"
           maxlength="19"
           placeholder="Enter Card Number"
         />

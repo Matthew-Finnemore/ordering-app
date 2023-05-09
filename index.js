@@ -15,7 +15,7 @@ let orderedItems = [];
 /* 
 Grab Username data on submit of the form, clear the ordered items, add the thankyou message.
 */
-modalForm.addEventListener('submit', function (e) {
+modalForm.addEventListener("submit", function (e) {
   e.preventDefault();
   modalSection.close();
   const modalData = new FormData(modalForm);
@@ -59,7 +59,7 @@ const getMenuHtml = (array) => {
         </div>
         <div class="plus-btn" data-id="${item.id}" ><i  class="fa-regular fa-plus"></i></div>
       </section>`;
-  });
+  }).join('');
   return menuHtml;
 };
 /* Renders the necessary html on the page and adds/removes hide class */
@@ -81,13 +81,15 @@ const render = () => {
 };
 /** A function that takes in the array of ordered item objects and creates an HTML string to insert into the correct element */
 const getOrderedHtml = (arr) => {
-  const orderedHtml = arr.map((item) => {
-    return `  <div class="ordered-item">
+  const orderedHtml = arr
+    .map((item) => {
+      return `  <div class="ordered-item">
     <div class="ordered-item-name">${item.name}</div>
     <div class="remove" data-remove="${item.id}">remove</div>
     <div class="ordered-item-price">£${item.price}</div>
   </div>`;
-  });
+    })
+    .join("");
   return orderedHtml;
 };
 /* Takes the name grabbed from the form and inserts it into the element */
