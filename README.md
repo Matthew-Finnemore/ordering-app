@@ -1,6 +1,6 @@
 # Jimmy's Diner Ordering App
 
-This is one of the first projects that I have made since returning to coding since having to have a break, it has been a great refresher and I feel happy with the project.
+I'm happy to be back coding after a break. This project was a great refresher, and I'm proud of what I was able to accomplish.
 
 <div align="center">
   <kbd>
