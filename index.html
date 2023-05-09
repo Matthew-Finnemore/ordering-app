@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="title">Jimmy's Diner</h1>
+        <h2 class="">The best burgers and pizzas in town</h2>
+      </div>
+    </header>
+    <div id="menu-items"></div>
+    <div class="order-section">
+      <h3 class="order-title">Your Order</h3>
+      <div class="ordered" id="ordered">
+        <div class="ordered-item">
+          <div class="ordered-item-name"></div>
+          <div class="remove"></div>
+          <div class="ordered-item-price"></div>
+        </div>
+      </div>
+      <div class="order-total">
+        <div class="total-price">Total Price</div>
+        <div class="price" id="total-price">$4</div>
+      </div>
+      <button class="hide btn" id="complete-order">Complete Order</button>
+    </div>
+    <dialog class="dialog" close>
+      <!-- Check this is the best form setup -->
+      <form class="modal" id="modal-form">
+        <p class="modal-heading">Enter card details</p>
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          autocomplete="on"
+          placeholder="Enter your name"
+        />
+        <input
+          type="number"
+          id="card-number"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          maxlength="19"
+          placeholder="Enter Card Number"
+        />
+        <input
+          type="number"
+          id="cvv"
+          max="999"
+          pattern="([0-9]|[0-9]|[0-9])"
+          placeholder="Enter CVV"
+        />
+        <button class="btn" id="pay-btn" type="submit">Pay</button>
+        <label for="name"></label>
+      </form>
+    </dialog>
+    <div class="thank-you hide">
+     
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
