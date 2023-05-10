@@ -2,6 +2,9 @@
 
 I'm happy to be back coding after a break. This project was a great refresher, and I'm proud of what I was able to accomplish.
 
+## Live Site:
+<a href="https://jimmys-diner-order.netlify.app">Jimmy's Diner Ordering App</a>
+
 <div align="center">
   <kbd>
     <img src="https://i.imgur.com/cqi3Ldj.gif" />
